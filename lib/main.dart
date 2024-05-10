@@ -11,9 +11,22 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+        backgroundColor: Colors.teal,
+        body: SafeArea(
+          child: Column(
+            children: <Widget>[
+            CircleAvatar(
+              radius: 50.0,
+              backgroundImage: AssetImage('images/profile.jpeg'),
+            ),
+            Text(
+              'Dhan',
+              style: TextStyle(
+                fontSize: 40.0,
+                fontWeight: FontWeight.bold
+              )
+            )
+          ],),)
       ),
     );
   }
