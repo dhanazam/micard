@@ -22,7 +22,18 @@ class MainApp extends StatelessWidget {
             Text(
               'Dhan',
               style: TextStyle(
+                fontFamily: 'Pacifico',
                 fontSize: 40.0,
+                fontWeight: FontWeight.bold
+              )
+            ),
+            Text(
+              'Flutter Developer',
+              style: TextStyle(
+                fontFamily: 'Source Sans Pro',
+                color: Color.fromARGB(255, 4, 97, 89),
+                fontSize: 20.0,
+                letterSpacing: 2.5,
                 fontWeight: FontWeight.bold
               )
             )
