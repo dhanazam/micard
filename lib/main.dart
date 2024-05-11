@@ -9,17 +9,17 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
             children: <Widget>[
-            CircleAvatar(
+            const CircleAvatar(
               radius: 50.0,
               backgroundImage: AssetImage('images/profile.jpeg'),
             ),
-            Text(
+            const Text(
               'Dhan',
               style: TextStyle(
                 fontFamily: 'Pacifico',
@@ -27,7 +27,7 @@ class MainApp extends StatelessWidget {
                 fontWeight: FontWeight.bold
               )
             ),
-            Text(
+            const Text(
               'Flutter Developer',
               style: TextStyle(
                 fontFamily: 'Source Sans Pro',
@@ -36,8 +36,55 @@ class MainApp extends StatelessWidget {
                 letterSpacing: 2.5,
                 fontWeight: FontWeight.bold
               )
+            ),
+            Container(
+              padding: const EdgeInsets.all(10.0),
+              color: Colors.white,
+              margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: const Row(
+                children: [
+                  Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  SizedBox(
+                    width: 10.0,
+                  ),
+                  Text(
+                    '60132678469',
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 1, 75, 62),
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 20.0
+                    )
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              color: Colors.white,
+              padding: const EdgeInsets.all(10.0),
+              margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: Row(
+                children: [
+                  const Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  Text(
+                    'ramadanazam93@gmail.com',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.teal.shade900,
+                      fontFamily: 'Source Sans Pro'
+                    )
+                  )
+                ]
+              ),
             )
-          ],),)
+          ],
+        ),
+        ),
       ),
     );
   }
