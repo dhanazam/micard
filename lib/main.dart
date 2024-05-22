@@ -37,50 +37,49 @@ class MainApp extends StatelessWidget {
                 fontWeight: FontWeight.bold
               )
             ),
-            Container(
-              padding: const EdgeInsets.all(10.0),
+            const Card(
               color: Colors.white,
-              margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              child: const Row(
-                children: [
-                  Icon(
-                    Icons.phone,
-                    color: Colors.teal,
-                  ),
-                  SizedBox(
-                    width: 10.0,
-                  ),
-                  Text(
-                    '60132678469',
-                    style: TextStyle(
-                      color: Color.fromARGB(255, 1, 75, 62),
-                      fontFamily: 'Source Sans Pro',
-                      fontSize: 20.0
-                    )
-                  ),
-                ],
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: Padding(
+                padding: EdgeInsets.all(25.0),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      '60132678469',
+                      style: TextStyle(
+                        color: Color.fromARGB(255, 1, 75, 62),
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0
+                      )
+                    ),
+                  ],
+                ),
               ),
             ),
-            Container(
+             Card(
               color: Colors.white,
-              padding: const EdgeInsets.all(10.0),
-              margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              child: Row(
-                children: [
-                  const Icon(
+              margin:  const EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: ListTile(
+                leading: const Icon(
                     Icons.email,
                     color: Colors.teal,
                   ),
-                  Text(
+                  title: Text(
                     'ramadanazam93@gmail.com',
                     style: TextStyle(
                       fontSize: 20.0,
                       color: Colors.teal.shade900,
                       fontFamily: 'Source Sans Pro'
                     )
-                  )
-                ]
-              ),
+                  ),
+              )
             )
           ],
         ),
